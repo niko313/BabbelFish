@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- META -->
+        <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">-->
+        <meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="css/lib/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/lib/fontawesome/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+
+        <title>Bienvenue dans Babel Fish</title>
+    </head>
+    <body>
+      <div class="jumbotron text-center">
+        <h1 id="title">Babel Fish</h1>
+        <p id="subTitle">translate Your setence !</p>
+      </div>
+      <div class="container">
+        <div id="network">
+        </div>
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-8">
+            <div class="row">
+              <div class="col-4 select">
+                <h2 class="setence">Quel est votre langue ? </h2>
+                <select id="langSource" data-placeholder="Choissisez votre langue :">
+                  <option value="DE" data-speak="de-DE">Allemand</option>
+                  <option value="EN" data-speak="en-GB">Anglais</option>
+                  <option value="ES" data-speak="es-ES">Espagnol</option>
+                  <option value="FR" data-speak="fr-FR" selected>Français</option>
+                  <option value="JPN" data-speak="ja-JP">Japonais</option>
+                  <option value="ZH" data-speak="cmn-Hans-CN">Mandarin</option>
+                  <option value="RU" data-speak="ru-RU">Russe</option>
+                </select>
+              </div>
+
+              <div class="col-4">
+
+              </div>
+              <div class="col-4 select">
+                <h2 class="setence">En quel langue souhaitez vous traduire ? </h2>
+                <select id="langTarget" data-placeholder="Choissisez une langue : ">
+                  <option value="DE" data-speak="de-DE">Allemand</option>
+                  <option value="EN" data-speak="en-GB" selected>Anglais</option>
+                  <option value="ES" data-speak="es-ES">Espagnol</option>
+                  <option value="FR" data-speak="fr-FR">Français</option>
+                  <option value="JPN" data-speak="ja-JP">Japonais</option>
+                  <option value="ZH" data-speak="zh-CN">Mandarin</option>
+                  <option value="RU" data-speak="ru-RU">Russe</option>
+                </select>
+              </div>
+
+              <div class="col-12">
+                <div class="app">
+                    <div id="deviceready" class="blink">
+                      <button type="button" id="bouton" class="buttons"><i class="fa fa-play-circle" aria-hidden="true"></i> Play </button>
+                      </br>
+                      <div class="col-12" id="textSource">
+                        <output type="text" id="texte" text-align="center">
+                      </div>
+                      </br>
+                      <div class="col-12" id="textTarget">
+                        <output type="text" id="texteTraduit" text-align="center">
+                      </div>
+                      <div class="col-12"id="divBtn">
+                        <div class="row">
+                          <div class="col-6 ">
+                            <button type="button" class="buttons" id="btnTraduc"><i class="fa fa-retweet" aria-hidden="true"></i> Traduct </button>
+                          </div>
+                          <div class="col-6">
+                            <button type="button" class="buttons" id="btnRepeat"><i class="fa fa-volume-up" aria-hidden="true"></i> Speak </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-2"></div>
+        </div>
+      </div>
+      <footer>
+        <div class="col-12">
+          <p id="credit">Application développer par VAISSIERE Nicolas & LOREDO Victor - Etudiant B3-Ingesup</p>
+        </div>
+      </footer>
+
+        <!-- SCRIPT -->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/lib/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/lib/popper.min.js"></script>
+        <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+
+    </body>
+</html>
